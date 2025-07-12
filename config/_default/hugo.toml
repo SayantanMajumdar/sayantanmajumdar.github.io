@@ -1,0 +1,35 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = 'Sayantan Majumdar'
+copyright = '© 2025 Sayantan Majumdar'
+
+enableRobotsTXT = true
+
+disableKinds = ["taxonomy", "term"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
+
+[frontmatter]
+  lastmod = [':fileModTime', ':default']
+
+[params]
+  math = false
+  [params.version]
+    major = 0
+    minor = 1
+    patch = 0
+  [params.author]
+    name = 'Sayantan Majumdar'
+
+[sitemap]
+  changeFreq = ''
+  disable = false
+  filename = 'sitemap.xml'
+  priority = -1

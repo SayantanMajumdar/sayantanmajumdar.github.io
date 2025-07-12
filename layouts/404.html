@@ -1,0 +1,12 @@
+{{- define "main" -}}
+<div class="div-404">
+  <img src="/img/svg/exclamation-triangle-fill.svg" alt="404 icon" width="100" height="100">
+  <h1>404 Not Found</h1>
+  <p>The page you requested cannot be found.</p>
+  <div>
+    <a href="{{ .Site.Home.RelPermalink | relURL }}">
+      Home
+    </a>
+  </div>
+</div>
+{{- end -}}

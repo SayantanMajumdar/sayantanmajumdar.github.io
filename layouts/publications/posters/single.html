@@ -1,0 +1,7 @@
+{{- define "main" -}}
+<h1>{{ .Params.title }}</h1>
+<div>
+    {{ .Render "poster_header" }}
+</div>
+<div>{{ .Content }}</div>
+{{- end -}}

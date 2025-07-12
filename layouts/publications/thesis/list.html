@@ -1,0 +1,15 @@
+{{- define "main" -}}
+  <h1>{{ .Title }}</h1>
+  <div>{{ .Content }}</div>
+    {{- $pubitems := page.RegularPages -}}
+    {{- if $pubitems -}}
+    <ul class="thesis-list">
+      {{- range $pubitems -}}
+        <li>
+          <!-- <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a> -->
+          {{ .Render "thesis_card" }}
+        </li>
+      {{- end -}}
+    </ul>
+    {{- end -}}
+{{- end -}}
