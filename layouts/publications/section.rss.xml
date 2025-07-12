@@ -1,0 +1,71 @@
+{{- $email := "" -}}
+{{- with site.Params.author.email -}}
+  {{- $email = . }}
+{{- end -}}
+{{- $name := "" -}}
+{{- with site.Params.author.name -}}
+  {{- $name = . }}
+{{- end -}}
+{{- $pages := .RegularPagesRecursive }}
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ .Title }} on {{ .Site.Title }}</title>
+    <link>{{ .Permalink }}</link>
+    <description>All {{ .Title }} on {{ .Site.Title }}</description>
+    <generator>Hugo</generator>
+    <language>{{ site.Language.LanguageCode }}</language>
+    {{- with $email }}
+    <managingEditor>{{.}}{{ with $name }} ({{ . }}){{ end }}</managingEditor>
+    {{- end }}
+    {{- with $email }}
+    <webMaster>{{ . }}{{ with $name }} ({{ . }}){{ end }}</webMaster>
+    {{- end }}
+    <copyright>{{ .Site.Copyright }}</copyright>
+    {{- if not .Date.IsZero }}
+    <lastBuildDate>{{ (index $pages.ByLastmod.Reverse 0).Lastmod.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>
+    {{- end }}
+    {{- with .OutputFormats.Get "RSS" }}
+    {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
+    {{- end }}
+    {{- range $pages }}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>
+      {{- if .PublishDate }}
+      <pubDate>{{ (time.AsTime .PublishDate) | time.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</pubDate>
+      {{- end }}
+      {{- if $email }}
+      <author>{{ $email }}{{ if $name }} ({{ $name }}){{ end }}</author>
+      {{- end }}
+      <guid>{{ .Permalink }}</guid>
+      <description>
+        {{- if .Params.bibliography }}
+        {{ printf "<div><strong>Bibliography:</strong> %s</div>" .Params.bibliography | transform.XMLEscape | safeHTML }}
+        {{- end }}
+        {{- if .Params.authors }}
+        {{ printf "<div><strong>Authors:</strong> %s</div>" (delimit .Params.authors ", ") | transform.XMLEscape | safeHTML }}
+        {{- end }}
+        {{- if .Params.submission_date }}
+        {{ printf "<div><strong>Submission date:</strong> %s</div>" (time.Format "Mon, 02 Jan 2006 15:04:05 -0700" (time.AsTime .Params.submission_date)) | transform.XMLEscape | safeHTML }}
+        {{- end }}
+        {{- if .Params.accepted_date }}
+        {{ printf "<div><strong>Accepted date:</strong> %s</div>" (time.Format "Mon, 02 Jan 2006 15:04:05 -0700" (time.AsTime .Params.accepted_date)) | transform.XMLEscape | safeHTML }}
+        {{- end }}
+        {{- if .Params.publication_date }}
+        {{ printf "<div><strong>Publication date:</strong> %s</div>" (time.Format "Mon, 02 Jan 2006 15:04:05 -0700" (time.AsTime .Params.publication_date)) | transform.XMLEscape | safeHTML }}
+        {{- end }}
+        {{- if .Params.doi }}
+        {{ printf "<div><strong>DOI:</strong> %s</div>" .Params.doi | transform.XMLEscape | safeHTML }}
+        {{- end }}
+        {{- if .Params.url }}
+        {{ printf "<div><strong>URL:</strong> %s</div>" .Params.url | transform.XMLEscape | safeHTML }}
+        {{- end }}
+        {{- if .Summary }}
+        {{ printf "<div><strong>Summary:</strong>%s</div>" .Summary | transform.XMLEscape | safeURL }}
+        {{- end }}
+      </description>
+    </item>
+    {{- end }}
+  </channel>
+</rss>

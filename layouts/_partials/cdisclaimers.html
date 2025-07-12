@@ -1,0 +1,23 @@
+{{- $ := .context }}
+<div class="{{ .type }}-disclaimers">
+    <ul>                                                                        
+        <li>
+            <small>Website built with <a href="https://gohugo.io" target="_blank">Hugo</a>.</small>
+        </li>
+        <li>
+            <small>Font family used <a href="https://github.com/productiontype/Spectral" target="_blank">Spectral</a><a href="https://github.com/google/fonts/blob/main/ofl/spectral/OFL.txt" target="_blank">(SIL OPEN FONT LICENSE Version 1.1)</a>.</small>
+        </li>
+        <li>
+            <small>Icons used from <a href="https://github.com/twbs/icons" target="_blank">Bootstrap Icons v1.13.1</a><a href="https://github.com/twbs/icons/blob/main/LICENSE" target="_blank">(MIT License)</a>.</small>
+        </li>
+        <li>
+            <small>ORCID iD symbol used from the ORCID Brand Library (symbol used according to <a href="https://info.orcid.org/brand-guidelines/" target="_blank">ORCID Brand Guidelines</a>). </small>
+        </li>
+        <li>
+            <small>{{ $.Site.Copyright }}. Content licensed under the <a href="https://github.com/SayantanMajumdar/sayantanmajumdar.github.io/blob/main/LICENSE" target="_blank">MIT License</a>.</small>
+        </li> 
+        <li>
+            <small>The website was last updated on {{ time.Now | time.In "Asia/Kolkata" | time.Format ":date_full" }} (Version: {{ $.Site.Params.version.major }}.{{ $.Site.Params.version.minor }}.{{ $.Site.Params.version.patch }})</small>
+        </li>
+    </ul>
+</div>

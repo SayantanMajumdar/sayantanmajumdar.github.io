@@ -1,0 +1,7 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = 'Sayantan Majumdar'
+copyright = '© 2025 Sayantan Majumdar'
+
+[build]
+  writeStats = true

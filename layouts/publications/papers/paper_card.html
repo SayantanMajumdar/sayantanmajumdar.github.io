@@ -1,0 +1,36 @@
+<div class="paper-card">
+    <div class="card-title"><a href="{{ .RelPermalink }}">{{ .Params.title }}</a></div>
+    {{- if .Params.authors -}}
+    <ul class="card-authors">
+        {{- range .Params.authors -}}
+        <li>{{ . }}</li>
+        {{- end -}}
+    </ul>
+    {{- end -}}
+    <div class="card-details">
+        {{- if .Params.journal -}}
+        <div>Journal: {{ .Params.journal }}</div>
+        <div>Volume: {{ .Params.volume }}</div>
+        <div>Year: {{ .Params.year }}</div>
+        {{- end -}}
+        {{- if .Params.publisher -}}
+        <div>Publisher: {{ .Params.publisher }}</div>
+        {{- end -}}
+    </div>
+    <div class="card-urls-links">
+        {{- if .Params.url -}}
+        <div class="card-url">URL: <a href="{{ .Params.url }}" target="_blank" rel="noopener noreferrer">{{ .Params.url }}</a></div>
+        {{- end -}}
+        {{- if .Params.doi -}}
+        <div class="card-doi">DOI: <a href="{{ .Params.doi }}" target="_blank" rel="noopener noreferrer">{{ substr .Params.doi 16 }}</a></div>
+        {{- end -}}
+    </div>
+    <div class="card-bottom">
+        <div><a href="{{ .RelPermalink }}">[...know more...]</a></div>   
+        {{- with .Resources.GetMatch "*.bib" -}}
+        <a href="{{ .RelPermalink | relURL }}" target="_blank" class="bibtex-download" title="Download the bibtex file.">
+            <img src="/img/svg/download.svg" alt="Download Bibtex" width="20" height="20">
+        </a>
+        {{- end -}}
+    </div>
+</div>
