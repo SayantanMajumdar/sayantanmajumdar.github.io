@@ -1,0 +1,173 @@
+@use "sass:map";
+@use "vars";
+@use "styles";
+
+#header-menu-openner {
+    display: none;
+}
+
+#header-menu-closer {
+    display: none;
+}
+
+.nav-header {
+    display: block;
+    background-color: vars.$primary-color;
+    color: vars.$text-color;
+    border-bottom: 2px solid vars.$hover-color;
+}
+
+#nav-menu-close-overlay {
+    display: none;
+}
+
+.nav-content {
+    #header-menu-openner {
+        @include styles.mobile {
+            display: block;
+            top: 0;
+            left: 0;
+            z-index: 3;
+            border: none;
+            padding: 1em;
+            background-color: vars.$primary-color;
+            color: vars.$text-color;
+        }
+    }
+
+    .nav-header-unhide~#nav-menu-close-overlay {
+        @include styles.mobile {
+            display: block;
+            color: vars.$text-color;
+            background-color: rgba(0, 0, 0, 0.66);
+            position: fixed;
+            inset: 0;
+            z-index: 5;
+        }
+    }
+
+    .nav-header {
+        @include styles.mobile {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 20;
+            height: 100dvh;
+            width: min(15em, 60%);
+            border-right: 2px solid vars.$hover-color;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+
+            @include styles.mobile {
+                flex-direction: column;
+            }
+
+            #header-menu-closer {
+                @include styles.mobile {
+                    display: inline-block;
+                    top: 0;
+                    left: 0;
+                    z-index: 3;
+                    border: none;
+                    padding: 1em;
+                    background-color: vars.$primary-color;
+                    color: vars.$text-color;
+                    cursor: pointer;
+                }
+            }
+
+            .home-link {
+                margin-right: auto;
+            }
+
+            a {
+                text-decoration: none;
+                font-weight: map.get($map: vars.$font-weights, $key: bold);
+                background-color: vars.$primary-color;
+                color: vars.$text-color;
+                padding: 1em;
+
+                &:hover {
+                    color: vars.$text-color;
+                    background-color: vars.$hover-color;
+                }
+
+                &.active-link {
+                    background: linear-gradient(to top, vars.$hover-color, vars.$accent-color);
+                }
+            }
+
+            li {
+                display: flex;
+
+                @include styles.mobile {
+                    &.home-link {
+                        margin-right: unset;
+                    }
+
+                    &:nth-child(1) {
+                        justify-content: right;
+                    }
+                }
+
+                a {
+                    @include styles.mobile {
+                        width: 100%;
+
+                        &.active-link {
+                            background: linear-gradient(to left, vars.$hover-color, vars.$accent-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .nav-header-unhide {
+        @include styles.mobile {
+            display: block;
+        }
+    }
+
+    .nav-footer {
+        display: block;
+        border-top: 2px solid vars.$hover-color;
+        background-color: vars.$primary-color;
+        color: vars.$text-color;
+        padding: 1em min(2em, 7%);
+
+        ul {
+            list-style: none;
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+
+            @include styles.mobile {
+                flex-direction: column;
+            }
+
+            li {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+
+                a {
+                    text-decoration: none;
+                    font-weight: map.get($map: vars.$font-weights, $key: semi-bold);
+                    background-color: vars.$primary-color;
+                    color: vars.$text-color;
+                    text-align: center;
+
+                    &.active-link {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+}

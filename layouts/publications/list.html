@@ -6,8 +6,8 @@
     {{- if $sections -}}
     <div>
       {{- range sort $sections "Params.weight" -}}
-        <div class="publication-section" ><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></div>
-        <div class="publication-section-list">
+        <div class="publication-list-header" ><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></div>
+        <div class="publication-list-list">
           {{- $pubitems := .RegularPages -}}
           {{- if $pubitems }}
           <ul>

@@ -1,0 +1,137 @@
+@use "sass:map";
+@use "vars";
+@use "styles";
+
+.publication-list {
+    display: block;
+    padding: 1em 0;
+    width: 100%;
+
+    #{&}-header {
+        display: flex;
+        width: 100%;
+
+        a {
+            @include styles.highlight-box;
+            width: 100%;
+            font-weight: map.get($map: vars.$font-weights, $key: bold);
+        }
+    }
+
+    #{&}-list {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 1em 2em;
+
+        ul {
+            display: block;
+            list-style: disc;
+            width: 100%;
+            font-weight: map.get($map: vars.$font-weights, $key: lite);
+
+            li {
+                display: list-item;
+                width: 100%;
+                padding: 1em 0 1em 0;
+
+                .publication-doi {
+                    word-break: break-all;
+                    overflow-wrap: break-word;
+                }
+
+                .publication-url {
+                    word-break: break-all;
+                    overflow-wrap: break-word;
+                }
+
+                .publication-bib {
+                    text-decoration: none;
+                    background-color: vars.$primary-color;
+                    color: vars.$text-color;
+                }
+
+                > div {
+                    @include styles.mobile {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.card-url, .card-doi {
+    a {
+        word-break: break-all;
+        overflow-wrap: break-word;
+    }
+}
+
+.paper-list {
+    display: block;
+    width: 100%;
+    padding: 1em 2em;
+    list-style: none;
+
+    > li {
+        padding: 1em 0;
+    }
+
+    @include styles.publication-card;
+}
+
+.poster-list {
+    display: block;
+    width: 100%;
+    padding: 1em 2em;
+    list-style: none;
+
+    > li {
+        padding: 1em 0;
+    }
+
+    @include styles.publication-card;
+}
+
+.presentation-list {
+    display: block;
+    width: 100%;
+    padding: 1em 2em;
+    list-style: none;
+
+    > li {
+        padding: 1em 0;
+    }
+
+    @include styles.publication-card;
+}
+
+.thesis-list {
+    display: block;
+    width: 100%;
+    padding: 1em 2em;
+    list-style: none;
+
+    > li {
+        padding: 1em 0;
+    }
+    
+    @include styles.publication-card;
+}
+
+.paper-header {
+    @include styles.publication-intro-headers;
+}
+
+.poster-header {
+    @include styles.publication-intro-headers;
+}
+
+.presentation-header {
+    @include styles.publication-intro-headers;
+}
+
+.thesis-header {
+    @include styles.publication-intro-headers;
+}

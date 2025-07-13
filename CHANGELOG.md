@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Changed
+
+- Using SCSS resources instead of CSS.
+- compact JS resource deployment.
+
 ## [0.1.0] - July 13, 2025
 
 ### Added

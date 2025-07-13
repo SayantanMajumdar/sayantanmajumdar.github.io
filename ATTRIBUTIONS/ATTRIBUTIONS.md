@@ -62,19 +62,22 @@ The license can also be found at [https://github.com/twbs/icons/blob/main/LICENS
 The Github workflow files [`/.github/workflows/deploy-website.taml`](/.github/workflows/deploy-website.taml) 
 and [`/.github/workflows/test-website.taml`](/.github/workflows/test-website.taml) 
 contain code that have been obtained from the [Hugo](https://gohugo.io/) 
-website. The code can also be found in the link 
+website. The code can be found in the link 
 [https://gohugo.io/host-and-deploy/host-on-github-pages/](https://gohugo.io/host-and-deploy/host-on-github-pages/) 
-and also in the corresponding repository file 
-[https://github.com/gohugoio/hugo/blob/master/docs/content/en/host-and-deploy/host-on-github-pages/index.md](https://github.com/gohugoio/hugo/blob/master/docs/content/en/host-and-deploy/host-on-github-pages/index.md). The code 
-in these files have been heavily modified for use in this repository. The code 
-was obtained from the specific version **v0.147.9** of [Hugo](https://gohugo.io/).
+and also in the corresponding repository for 
+[Hugo](https://gohugo.io/) website in the file 
+[https://github.com/gohugoio/hugoDocs/blob/b6077449c8b62314e5a1a8b0586bdb501ca0d948/content/en/host-and-deploy/host-on-github-pages/index.md](https://github.com/gohugoio/hugoDocs/blob/b6077449c8b62314e5a1a8b0586bdb501ca0d948/content/en/host-and-deploy/host-on-github-pages/index.md). The code 
+in these files have been modified for use in this repository. The code 
+was obtained from the specific version **v0.148.1** of [Hugo](https://gohugo.io/).
 
 The code was under the [`Apache License 2.0`](https://github.com/gohugoio/hugo/blob/master/LICENSE).
 
 A copy of the copyright and licence file is included in this repository as 
 the file [/ATTRIBUTIONS/Hugo-workflows-LICENSE](/ATTRIBUTIONS/Hugo-workflows-LICENSE). 
 A copy of the same licence file can be found in the corresponding repository for 
-[Hugo](https://gohugo.io/) at [https://github.com/gohugoio/hugo/blob/master/LICENSE](https://github.com/gohugoio/hugo/blob/master/LICENSE).
+[Hugo](https://gohugo.io/) at [https://github.com/gohugoio/hugo/blob/master/LICENSE](https://github.com/gohugoio/hugo/blob/master/LICENSE) 
+and also at the corresponding repository for the [Hugo](https://gohugo.io/) website at 
+[https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md](https://github.com/gohugoio/hugoDocs/blob/master/content/LICENSE.md).
 
 5. CHANGELOG
 
@@ -95,3 +98,41 @@ A copy of the license file has been included in this repository as the
 file [`/ATTRIBUTIONS/Keep-a-changelog-LICENSE`](/ATTRIBUTIONS/Keep-a-changelog-LICENSE). 
 The license file can also be found at 
 [https://github.com/olivierlacan/keep-a-changelog/blob/main/LICENSE](https://github.com/olivierlacan/keep-a-changelog/blob/main/LICENSE).
+
+6. Code transpiling `scss` resources
+
+The file [`/layouts/_partials/css_styles.html`](/layouts/_partials/css_styles.html) 
+contains code that was provided in the [Hugo](https://gohugo.io/) website. 
+The code instructs [Hugo](https://gohugo.io/) to transpile the `scss` 
+files to `css` files using [`Dart Sass`](https://sass-lang.com/dart-sass/). 
+The code can be found in 
+[https://gohugo.io/functions/css/sass/](https://gohugo.io/functions/css/sass/) 
+and also in the corresponding repository for 
+[Hugo](https://gohugo.io/) in the file 
+[https://github.com/gohugoio/hugo/blob/master/docs/content/en/functions/css/Sass.md](https://github.com/gohugoio/hugo/blob/master/docs/content/en/functions/css/Sass.md). The code in these files have been modified for use in this repository. The code 
+was obtained from the specific version **v0.148.0** of [Hugo](https://gohugo.io/).
+
+The code was under the [`Apache License 2.0`](https://github.com/gohugoio/hugo/blob/master/LICENSE).
+
+A copy of the copyright and licence file is included in this repository as 
+the file [/ATTRIBUTIONS/Hugo-workflows-LICENSE](/ATTRIBUTIONS/Hugo-workflows-LICENSE). 
+A copy of the same licence file can be found in the corresponding repository for 
+[Hugo](https://gohugo.io/) at [https://github.com/gohugoio/hugo/blob/master/LICENSE](https://github.com/gohugoio/hugo/blob/master/LICENSE).
+
+7. Code processing `js` resources
+
+The file [`/layouts/_partials/js_script.html`](/layouts/_partials/js_script.html) 
+contains code that was provided in the [Hugo](https://gohugo.io/) website. 
+The code can be found in 
+[https://gohugo.io/functions/js/build/#nodejs-dependencies](https://gohugo.io/functions/js/build/#nodejs-dependencies) 
+and also in the corresponding repository for 
+[Hugo](https://gohugo.io/) in the file 
+[https://github.com/gohugoio/hugo/blob/master/docs/content/en/functions/js/Build.md](https://github.com/gohugoio/hugo/blob/master/docs/content/en/functions/js/Build.md). The code in these files have been modified for use in this repository. The code 
+was obtained from the specific version **v0.148.0** of [Hugo](https://gohugo.io/).
+
+The code was under the [`Apache License 2.0`](https://github.com/gohugoio/hugo/blob/master/LICENSE).
+
+A copy of the copyright and licence file is included in this repository as 
+the file [/ATTRIBUTIONS/Hugo-workflows-LICENSE](/ATTRIBUTIONS/Hugo-workflows-LICENSE). 
+A copy of the same licence file can be found in the corresponding repository for 
+[Hugo](https://gohugo.io/) at [https://github.com/gohugoio/hugo/blob/master/LICENSE](https://github.com/gohugoio/hugo/blob/master/LICENSE).
