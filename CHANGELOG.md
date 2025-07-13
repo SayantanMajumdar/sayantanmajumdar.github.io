@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [0.1.0] - July 13, 2025
+
 ### Added
 
 - A Github workflow to test Hugo build.
@@ -22,4 +24,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - An `ATTRIBUTIONS` folder for all copyright and license issues.
 - A proper `README.md` file.
 
-[unreleased]: https://github.com/SayantanMajumdar/sayantanmajumdar.github.io/compare/main...HEAD
+[unreleased]: https://github.com/SayantanMajumdar/sayantanmajumdar.github.io/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/SayantanMajumdar/sayantanmajumdar.github.io/releases/tag/v0.1.0
