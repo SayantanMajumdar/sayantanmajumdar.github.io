@@ -5,10 +5,10 @@
 {{- if $isfooter -}}
 {{- $thismenu = site.Data.menu.menus.footer -}}
 {{- end }}
-<div class="{{ .navtype }}-nav">
+<div class="nav-content">
     {{- if $isheader }}
     <div>
-        <button id="header-menu-open" onclick="HeaderMenuOpen()">
+        <button id="header-menu-openner" onclick="HeaderMenuOpen()">
             <img src="/img/svg/list.svg" alt="Hamburger Button" width="25" height="25">
         </button>
     </div>
@@ -18,7 +18,7 @@
         <ul>
             {{- if $isheader }}
             <li>
-                <button id="header-menu-close" onclick="HeaderMenuClose()">
+                <button id="header-menu-closer" onclick="HeaderMenuClose()">
                     <img src="/img/svg/x-lg.svg" alt="Close Button" width="25" height="25">
                 </button>
             </li>

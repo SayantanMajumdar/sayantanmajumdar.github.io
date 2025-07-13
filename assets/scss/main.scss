@@ -1,0 +1,72 @@
+@use "resets";
+@use "vars";
+@use "styles";
+@use "base";
+@use "navs";
+@use "pubs";
+
+.home-content {
+    p {
+        padding: 1em 0;
+
+        .download-cv {
+            @include styles.highlight-box;
+        }
+    }
+}
+
+
+.footer-links {
+    display: flex;
+    border-top: 2px solid vars.$hover-color;
+    padding: 1em min(2em, 7%);
+
+    ul {
+        list-style: none;
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+
+        li {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+
+            a {
+                display: flex;
+                text-decoration: none;
+
+                img {
+                    width: 2em;
+                    height: 2em;
+                }
+            }
+        }
+    }
+}
+
+.footer-disclaimers {
+    color: vars.$text-color;
+    background-color: vars.$primary-color;
+    border-top: 2px solid vars.$hover-color;
+
+    li {
+        padding: 0 1em;
+    }
+
+    ul {
+        list-style: none;
+        display: block;
+        padding: 1em min(2em, 7%);
+
+        li {
+            display: flex;
+            width: 100%;
+            justify-content: left;
+            @include styles.mobile {
+                padding: 0;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,78 @@
+@use "sass:map";
+@use "vars";
+@use "styles";
+
+html {
+    font-family: "Spectral", serif;
+    font-weight: map.get($map: vars.$font-weights, $key: regular);
+    font-style: normal;
+    font-size: 16px;
+    background-color: vars.$primary-color;
+    color: vars.$text-color;
+    height: 100%;
+
+    body {
+        min-height: 100dvh;
+        max-width: vars.$max-width;
+        min-width: vars.$min-width;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+
+        main {
+            padding: min(3em, 6%);
+            flex: 1;
+            font-size: 1rem;
+            
+            p {
+                margin-top: 1em;
+            }
+
+            a {
+                color: vars.$hover-color;
+                background-color: vars.$primary-color;
+                word-break: normal;
+                overflow-wrap: anywhere;
+
+                &:hover {
+                    color: vars.$text-color;
+                    background-color: vars.$primary-color;
+                }
+
+                &:visited {
+                    color: vars.$text-color;
+                    background-color: vars.$primary-color;
+                }
+            }
+
+            .footnotes {
+                width: 100%;
+                padding: 2em 0 2em 1em;
+                text-wrap: wrap;
+                display: block;
+
+                hr {
+                    display: none;
+                }
+                
+                a {
+                    word-break: break-all;
+                    overflow-wrap: break-word;
+                }
+            }
+
+            .div-404 {
+                text-align: center;
+                font-weight: map.get($map: vars.$font-weights, $key: bold);
+                
+                div {
+                    padding: 2em 0;
+
+                    a {
+                        @include styles.highlight-box;
+                    }
+                }
+            }
+        }
+    }
+}
