@@ -1,0 +1,26 @@
+<div class="thesis-header">
+    {{- if .Params.authors -}}
+    <ul class="card-authors">
+        {{- range .Params.authors -}}
+        <li>{{ . }}</li>
+        {{- end -}}
+    </ul>
+    {{- end -}}
+    <div class="card-details">
+        <div>Type: {{ .Params.type }}</div>
+        <div>Institute: {{ .Params.institute }}</div>
+        <div>Year: {{ .Params.year }}</div>
+    </div>
+    <div class="card-urls-links">
+        {{- if .Params.url -}}
+        <div class="card-url">URL: <a href="{{ .Params.url }}" target="_blank" rel="noopener noreferrer">{{ .Params.url }}</a></div>
+        {{- end -}}
+    </div>
+    <div class="card-bottom">
+        {{- with .Resources.GetMatch "*.bib" -}}
+        <a href="{{ .RelPermalink | relURL }}" target="_blank" class="bibtex-download" title="Download the bibtex file.">
+            <img src="/img/svg/download.svg" alt="Download Bibtex" width="20" height="20">
+        </a>
+        {{- end -}}
+    </div>
+</div>

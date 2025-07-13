@@ -1,0 +1,86 @@
+{
+    "menus": {
+        "main": [
+            {
+                "title": "Home",
+                "refURL": "/",
+                "weight": 10,
+                "absoluteURL": false
+            },
+            {
+                "title": "About",
+                "refURL": "/about/",
+                "weight": 20,
+                "absoluteURL": false
+            },
+            {
+                "title": "Publications",
+                "refURL": "/publications/",
+                "weight": 30,
+                "absoluteURL": false
+            },
+            {
+                "title": "Research",
+                "refURL": "/research/",
+                "weight": 40,
+                "absoluteURL": false
+            },
+            {
+                "title": "Contact",
+                "refURL": "/contact/",
+                "weight": 50,
+                "absoluteURL": false
+            },
+            {
+                "title": "Softwares",
+                "refURL": "/softwares/",
+                "weight": 60,
+                "absoluteURL": false
+            }
+        ],
+        "footer": [
+            {
+                "title": "Home",
+                "refURL": "/",
+                "weight": 10,
+                "absoluteURL": false
+            },
+            {
+                "title": "About",
+                "refURL": "/about/",
+                "weight": 20,
+                "absoluteURL": false
+            },
+            {
+                "title": "Publications",
+                "refURL": "/publications/",
+                "weight": 30,
+                "absoluteURL": false
+            },
+            {
+                "title": "Research",
+                "refURL": "/research/",
+                "weight": 40,
+                "absoluteURL": false
+            },
+            {
+                "title": "Contact",
+                "refURL": "/contact/",
+                "weight": 50,
+                "absoluteURL": false
+            },
+            {
+                "title": "Softwares",
+                "refURL": "/softwares/",
+                "weight": 60,
+                "absoluteURL": false
+            },
+            {
+                "title": "Sitemap",
+                "refURL": "/sitemap.xml",
+                "weight": 70,
+                "absoluteURL": false
+            }
+        ]
+    }
+}
