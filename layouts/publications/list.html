@@ -1,0 +1,32 @@
+{{- define "main" -}}
+{{- $sections := page.Sections -}}
+  <h1>{{ .Title }}</h1>
+  <div>{{ .Content }}</div>
+  <div  class="publication-list">
+    {{- if $sections -}}
+    <div>
+      {{- range sort $sections "Params.weight" -}}
+        <div class="publication-section" ><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></div>
+        <div class="publication-section-list">
+          {{- $pubitems := .RegularPages -}}
+          {{- if $pubitems }}
+          <ul>
+            {{- range $pubitems }}
+              <li>
+                <a href="{{ .RelPermalink }}" class="publication-bib" >{{ .Params.bibliography | markdownify }}</a>
+                {{- if .Params.doi }}
+                <div>DOI: <a href="{{ .Params.doi }}" class="publication-doi" target="_blank" >{{ substr .Params.doi 16 }}</a></div>
+                {{- end }}
+                {{- if .Params.url }}
+                <div>URL: <a href="{{ .Params.url }}" class="publication-url" target="_blank" >{{ .Params.url }}</a></div>
+                {{- end }}
+              </li>
+            {{- end }}
+          </ul>
+          {{- end }}
+        </div>
+      {{- end -}}
+      </div>
+    {{- end -}}
+  </div>
+{{- end -}}

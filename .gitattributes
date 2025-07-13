@@ -1,0 +1,38 @@
+# source files
+*               text    eol=lf
+
+*.txt           text
+*.html          text    diff=html
+*.css           text    diff=css
+*.js            text
+*.bibtex        text    diff=bibtex
+*.bib           text    diff=bibtex
+*.md            text    diff=markdown
+
+# images, docs, and fonts
+*.pdf           binary
+*.png           binary
+*.jpg           binary
+*.jpeg          binary
+*.gif           binary
+*.tif           binary
+*.tiff          binary
+*.ico           binary
+*.svg           binary
+*.eps           binary
+*.ttf           binary
+*.otf           binary
+*.woff          binary
+*.woff2         binary
+
+# data
+*.json          text
+*.toml          text
+*.xml           text
+*.yaml          text
+*.yml           text
+
+# git files
+.gitattributes  export-ignore
+.gitignore      export-ignore
+.gitkeep        export-ignore
