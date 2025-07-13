@@ -1,0 +1,46 @@
+{
+    "links" : [
+        {
+            "item": "LinkedIn",
+            "logo": "/img/svg/linkedin.svg",
+            "url": "https://www.linkedin.com/in/majumdarsayantan/",
+            "absoluteURL": true
+        },
+        {
+            "item": "Github",
+            "logo": "/img/svg/github.svg",
+            "url": "https://github.com/SayantanMajumdar",
+            "absoluteURL": true
+        },
+        {
+            "item": "GitLab",
+            "logo": "/img/svg/gitlab.svg",
+            "url": "https://gitlab.com/SayantanMajumdar",
+            "absoluteURL": true
+        },
+        {
+            "item": "ORCID",
+            "logo": "/img/svg/ORCID-iD_icon_vector.svg",
+            "url": "https://orcid.org/0009-0004-9222-5991",
+            "absoluteURL": true
+        },
+        {
+            "item": "Webpage",
+            "logo": "/img/svg/house-fill.svg",
+            "url": "https://sayantanmajumdar.github.io/",
+            "absoluteURL": true
+        },
+        {
+            "item": "CV",
+            "logo": "/img/svg/file-earmark-person.svg",
+            "url": "/cv/SayantanMajumdar_CV.pdf",
+            "absoluteURL": false
+        },
+        {
+            "item": "RSS Feed",
+            "logo": "/img/svg/rss-fill.svg",
+            "url": "/publications/index.xml",
+            "absoluteURL": false
+        }
+    ]
+}

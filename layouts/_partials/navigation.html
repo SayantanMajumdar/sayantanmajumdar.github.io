@@ -1,0 +1,37 @@
+{{- $ := .context -}}
+{{- $isheader := (eq .navtype "header") -}}
+{{- $isfooter := (eq .navtype "footer") -}}
+{{- $thismenu := site.Data.menu.menus.main -}}
+{{- if $isfooter -}}
+{{- $thismenu = site.Data.menu.menus.footer -}}
+{{- end }}
+<div class="{{ .navtype }}-nav">
+    {{- if $isheader }}
+    <div>
+        <button id="header-menu-open" onclick="HeaderMenuOpen()">
+            <img src="/img/svg/list.svg" alt="Hamburger Button" width="25" height="25">
+        </button>
+    </div>
+    {{- end -}}
+    {{- if $thismenu }}
+    <nav class="nav-{{ .navtype }}" id="nav-{{ .navtype }}">
+        <ul>
+            {{- if $isheader }}
+            <li>
+                <button id="header-menu-close" onclick="HeaderMenuClose()">
+                    <img src="/img/svg/x-lg.svg" alt="Close Button" width="25" height="25">
+                </button>
+            </li>
+            {{- end -}}
+            {{- range (sort $thismenu "weight" "asc") -}}
+            {{- $isitemhome := eq .title "Home" -}}
+            {{- $isactive := or (and (not $isitemhome) (hasPrefix $.RelPermalink .refURL)) (eq $.RelPermalink .refURL) }}
+            <li class="{{ if $isitemhome }}home-link{{ end }}"><a href="{{ if .absoluteURL }}{{ .refURL }}{{ else }}{{ .refURL | relURL }}{{ end }}" class="{{ if $isactive }}active-link{{ end }}">{{ .title }}</a></li>
+            {{- end }}
+        </ul>
+    </nav>
+    {{- if $isheader }}
+    <div id="nav-menu-close-overlay" onclick="HeaderMenuClose()"></div>
+    {{- end -}}
+    {{- end }}
+</div>

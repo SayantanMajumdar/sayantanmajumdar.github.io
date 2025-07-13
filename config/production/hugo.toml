@@ -1,0 +1,8 @@
+baseURL = 'https://sayantanmajumdar.github.io/'
+languageCode = 'en-us'
+title = 'Sayantan Majumdar'
+copyright = '© 2025 Sayantan Majumdar'
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'

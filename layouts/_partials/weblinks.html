@@ -1,0 +1,9 @@
+{{- if site.Data.contact.links -}}
+<div class="{{ .type }}-links">
+    <ul>
+        {{- range site.Data.contact.links }}
+        <li><a href="{{ if .absoluteURL }}{{ .url }}{{ else }}{{ .url | relURL }}{{ end }}" target="_blank" rel="noopener noreferrer"><img src="{{ .logo }}" alt="{{ .item }} logo"></a></li>
+        {{- end }}
+    </ul>
+</div>
+{{- end -}}

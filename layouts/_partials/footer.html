@@ -1,0 +1,13 @@
+<footer>
+    <div class="footer-info">
+        <div>
+            {{ partial "weblinks.html" (dict "context" . "type" "footer") }}
+        </div>
+        <div>
+            {{ partial "navigation.html" (dict "context" . "navtype" "footer") }}
+        </div>
+    </div>
+    <div>
+        {{ partial "cdisclaimers.html" (dict "context" . "type" "footer") }}
+    </div>
+</footer>
