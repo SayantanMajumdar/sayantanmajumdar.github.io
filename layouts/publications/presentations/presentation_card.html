@@ -11,7 +11,7 @@
         {{- if .Params.booktitle -}}
         <div>Booktitle: {{ .Params.booktitle }}</div>
         {{- end -}}
-        <div>Date: {{ .Params.month }}-{{ .Params.year }}</div>
+        <div>Date: {{ (.Params.publication_date | time.AsTime).Format "January 02, 2006" }}</div>
         {{- if .Params.organisation -}}
         <div>Organisation: {{ .Params.organisation }}</div>
         {{- end -}}

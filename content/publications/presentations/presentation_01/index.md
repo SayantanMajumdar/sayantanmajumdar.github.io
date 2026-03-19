@@ -8,11 +8,12 @@ publishDate: 2025-07-06T19:00:00+0530
 params:
     published: true
     openaccess: false
-    publication_date: 2023-02-23
+    publication_date: 2023-03-11
     title: "How to track blood glucose from the CGM?"
     authors: ["Sayantan Majumdar", "Saurabh D. Kalamkar", "Shashikant Dudhgaonkar", "Saroj Ghaskadbi", "Pranay Goel"]
     year: 2023
     month: 3
+    day: 11
     organisation: "Chellaram Diabetes Institute"
     note: "Presentation at the 7th International Diabetes Summit - 2023 (IDS), Pune"
     bibliography: |
