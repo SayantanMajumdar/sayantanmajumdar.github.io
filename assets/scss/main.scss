@@ -63,6 +63,7 @@
             display: flex;
             width: 100%;
             justify-content: left;
+
             @include styles.mobile {
                 padding: 0;
             }
@@ -70,3 +71,51 @@
     }
 }
 
+table.bbmc-lecture-table {
+    border-collapse: collapse;
+    margin: 2em 1em 2em 1em;
+    width: 100%;
+
+    @include styles.mobile {
+        width: unset;
+        max-width: 100%;
+    }
+
+    &:hover th {
+        background-color: vars.$hover-color;
+    }
+
+    tbody>tr {
+        transition: 900ms ease-in-out;
+
+        &:nth-child(odd) {
+            background-color: vars.$primary-color;
+        }
+
+        &:nth-child(even) {
+            background-color: vars.$accent-color;
+        }
+
+        &:hover {
+            background-color: vars.$hover-color;
+        }
+
+        td {
+            padding: 1em;
+            border: 1pt solid;
+        }
+
+        a {
+            background-color: inherit;
+            color: vars.$text-color;
+        }
+    }
+
+    th {
+        padding: 1em;
+        background-color: vars.$accent-color;
+        font-weight: map-get($map: vars.$font-weights, $key: semi-bold);
+        border: 2pt solid vars.$text-color;
+        transition: 900ms ease-in-out;
+    }
+}

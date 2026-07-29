@@ -9,6 +9,10 @@ disableKinds = ["taxonomy", "term"]
 
 [markup]
   [markup.goldmark]
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
     [markup.goldmark.extensions]
       [markup.goldmark.extensions.passthrough]
         enable = true

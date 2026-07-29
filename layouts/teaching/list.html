@@ -1,0 +1,23 @@
+{{- define "main" -}}
+{{- $sections := page.Sections -}}
+  <h1>{{ .Title }}</h1>
+  <div>{{ .Content }}</div>
+  <div  class="publication-list">
+    {{- if $sections -}}
+    <div>
+      {{- range sort $sections "Params.weight" "desc" -}}
+        <div class="publication-list-header" ><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></div>
+        <div class="publication-list-list">
+          <div>
+            {{- .Summary -}}
+          </div>
+          {{/* if .Page.Sections */}}
+          {{- if .Page.Pages -}}
+            The resources for all the courses can be found <a href="{{ .RelPermalink }}">[[here]]</a>.
+          {{- end -}}
+        </div>
+      {{- end -}}
+      </div>
+    {{- end -}}
+  </div>
+{{- end -}}

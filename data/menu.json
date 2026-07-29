@@ -26,15 +26,21 @@
                 "absoluteURL": false
             },
             {
+                "title": "Teaching",
+                "refURL": "/teaching/",
+                "weight": 50,
+                "absoluteURL": false
+            },
+            {
                 "title": "Contact",
                 "refURL": "/contact/",
-                "weight": 50,
+                "weight": 60,
                 "absoluteURL": false
             },
             {
                 "title": "Softwares",
                 "refURL": "/softwares/",
-                "weight": 60,
+                "weight": 70,
                 "absoluteURL": false
             }
         ],
@@ -64,21 +70,27 @@
                 "absoluteURL": false
             },
             {
+                "title": "Teaching",
+                "refURL": "/teaching/",
+                "weight": 50,
+                "absoluteURL": false
+            },
+            {
                 "title": "Contact",
                 "refURL": "/contact/",
-                "weight": 50,
+                "weight": 60,
                 "absoluteURL": false
             },
             {
                 "title": "Softwares",
                 "refURL": "/softwares/",
-                "weight": 60,
+                "weight": 70,
                 "absoluteURL": false
             },
             {
                 "title": "Sitemap",
                 "refURL": "/sitemap.xml",
-                "weight": 70,
+                "weight": 80,
                 "absoluteURL": false
             }
         ]
