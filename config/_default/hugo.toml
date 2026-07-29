@@ -9,6 +9,10 @@ disableKinds = ["taxonomy", "term"]
 
 [markup]
   [markup.goldmark]
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
     [markup.goldmark.extensions]
       [markup.goldmark.extensions.passthrough]
         enable = true
@@ -23,8 +27,8 @@ disableKinds = ["taxonomy", "term"]
   math = false
   [params.version]
     major = 0
-    minor = 2
-    patch = 1
+    minor = 3
+    patch = 0
   [params.author]
     name = 'Sayantan Majumdar'
 
