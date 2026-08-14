@@ -2,23 +2,21 @@
 title: "About"
 draft: false
 date: 2025-06-30T10:22:00+0530
-lastmod: 2025-07-06T18:52:00+0530
-publishDate: 2025-07-06T19:00:00+0530
+lastmod: 2026-08-14T23:07:00+0530
+publishDate: 2026-08-14T23:08:00+0530
 ---
 
-I am Sayantan Majumdar, a recent Ph.D. graduate from the Department of Biology, 
+I am Sayantan Majumdar, a recent Ph.D. recipient from the Department of Biology, 
 Indian Institute of Science Education and Research (IISER) Pune. My research 
-involves solving problems at the intersection of *Optimization 
-Theory*, *Inverse Theory*, *Dynamical Systems Theory*, *Control Theory*, 
-*Dynamic Input Recovery*, and *Trajectory Optimization*. The current research for 
-my Ph.D. thesis involved the analysis of continuous glucose
+involves solving problems at the intersection of *Inverse Theory*,
+*Control Theory*, and *Trajectory Optimization*. My current and previously
+doctoral research involved the analysis of continuous glucose
 monitoring (CGM) traces obtained from diabetes patients. It involved developing 
-a method for estimating the HbA1c of the patient from their CGM trace. 
+a method for estimating the HbA1c of any patient from their CGM trace. 
 It also involved obtaining an estimate of the
-continuous glucose concentration in the plasma (BG) of the patient. 
-I have successfully defended my Ph.D. thesis this 
-December, 2024. I plan on continuing my research on these problems, developing 
-mathematical tools and algorithms to solve such problems numerically. 
+continuous glucose concentration in the plasma (BG) of the patient from their
+CGm trace. I plan on continuing my work on these problems by developing 
+mathematical tools and algorithms to solve these problems numerically. 
 
 ## Educational Qualifications
 

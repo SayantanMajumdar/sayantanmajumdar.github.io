@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Changed
+
+- Updated the CV
+- Updated the `About` page
+- Updated the `Research` page
+- Updated the `Home` page
+- Updated Lecture Notes 1 & 2 for PH-201, Semester III (2026)
+- Added Lecture Notes 3 for PH-201, Semester III (2026)
+
 ## [0.3.0] - July 29, 2026
 
 ### Changed

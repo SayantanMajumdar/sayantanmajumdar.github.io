@@ -2,19 +2,19 @@
 title: "Research"
 draft: false
 date: 2025-06-30T12:02:00+0530
-lastmod: 2025-07-06T18:50:00+0530
-publishDate: 2025-07-06T19:00:00+0530
+lastmod: 2026-08-14T23:26:00+0530
+publishDate: 2026-08-14T23:30:00+0530
 ---
-My research lies at the intersection of *optimization theory*, *control theory*, 
-*dynamic input recovery*, *dynamical systems theory*, *inverse theory*, and 
-*trajectory optimization*. The general goal is to construct methods, techniques, 
-or algorithms to recover the underlying dynamics of an unknown system and/or the 
-underlying dynamics of the control signal driving the system, using a set of 
-partial or complete measurements of the system. Specifically, my current Ph.D. 
-research involved studying the underlying dynamics of the glucose-insulin system 
-in an individual's body from their continuous glucose monitoring (CGM) trace 
-which essentially is a discrete sequence of measurements of the glucose 
-concentration in the intertitial fluid (ISF) of the individual.
+My research lies at the intersection of *Inverse Theory*,
+*Control Theory*, and *Trajectory Optimization*. The general goal is to
+construct methods, techniques, or algorithms to recover the underlying dynamics
+of an unknown system and/or the underlying dynamics of the control signal
+driving the system, using a set of partial or complete measurements of the
+system. To be more specific, my doctoral research involved studying the
+underlying dynamics of the glucose-insulin system in an individual's body using
+their continuous glucose monitoring (CGM) trace, which essentially is a discrete
+sequence of measurements of the glucose concentration in the intertitial fluid
+(ISF) of the individual.
 
 ## Estimating HbA1c  
 I have succesfully obtained two methods for estimating HbA1c values for type 
