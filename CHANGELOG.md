@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [0.3.2] - August 16, 2026
+
+### Changed
+
+- Updated the CV
+
 ## [0.3.1] - August 14, 2026
 
 ### Changed
@@ -54,7 +60,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - An `ATTRIBUTIONS` folder for all copyright and license issues.
 - A proper `README.md` file.
 
-[unreleased]: https://github.com/SayantanMajumdar/sayantanmajumdar.github.io/compare/v0.3.1...HEAD
+[unreleased]: https://github.com/SayantanMajumdar/sayantanmajumdar.github.io/compare/v0.3.2...HEAD
+[0.3.2]: https://github.com/SayantanMajumdar/sayantanmajumdar.github.io/compare/v0.3.1...v0.3.2
 [0.3.1]: https://github.com/SayantanMajumdar/sayantanmajumdar.github.io/compare/v0.3.0...v0.3.1
 [0.3.0]: https://github.com/SayantanMajumdar/sayantanmajumdar.github.io/compare/v0.2.1...v0.3.0
 [0.2.1]: https://github.com/SayantanMajumdar/sayantanmajumdar.github.io/compare/v0.2.0...v0.2.1
