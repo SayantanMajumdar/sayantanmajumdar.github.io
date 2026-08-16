@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "resets";
 @use "vars";
 @use "styles";
@@ -114,7 +115,7 @@ table.bbmc-lecture-table {
     th {
         padding: 1em;
         background-color: vars.$accent-color;
-        font-weight: map-get($map: vars.$font-weights, $key: semi-bold);
+        font-weight: map.get($map: vars.$font-weights, $key: semi-bold);
         border: 2pt solid vars.$text-color;
         transition: 900ms ease-in-out;
     }

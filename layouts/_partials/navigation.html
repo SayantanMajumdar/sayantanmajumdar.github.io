@@ -1,9 +1,9 @@
 {{- $ := .context -}}
 {{- $isheader := (eq .navtype "header") -}}
 {{- $isfooter := (eq .navtype "footer") -}}
-{{- $thismenu := site.Data.menu.menus.main -}}
+{{- $thismenu := hugo.Data.menu.menus.main -}}
 {{- if $isfooter -}}
-{{- $thismenu = site.Data.menu.menus.footer -}}
+{{- $thismenu = hugo.Data.menu.menus.footer -}}
 {{- end }}
 <div class="nav-content">
     {{- if $isheader }}

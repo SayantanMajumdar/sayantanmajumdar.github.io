@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Changed
+
+- Updated the Hugo version in the `test-website.yaml` workflow
+- Updated the Dart SASS version in the `test-website.yaml` workflow
+- Updated the `test-website,yaml` github workflow
+- Updated `ATTRIBUTIONS.md` to reflect the new `test-website.yaml` workflow
+- Replaced depreciated `languageCode` with `locale`
+- Replaced depreciated `map-get` with `map.get`
+- Replaced depreciated `site.Data` with `hugo.Data`
+
 ## [0.3.2] - August 16, 2026
 
 ### Changed
