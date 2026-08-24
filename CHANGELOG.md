@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [0.3.3] - August 24, 2026
+
 ### Changed
 
 - Updated the Hugo version in the `test-website.yaml` workflow
@@ -76,6 +78,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - A proper `README.md` file.
 
 [unreleased]: https://github.com/SayantanMajumdar/sayantanmajumdar.github.io/compare/v0.3.2...HEAD
+[0.3.3]: https://github.com/SayantanMajumdar/sayantanmajumdar.github.io/compare/v0.3.2...v0.3.3
 [0.3.2]: https://github.com/SayantanMajumdar/sayantanmajumdar.github.io/compare/v0.3.1...v0.3.2
 [0.3.1]: https://github.com/SayantanMajumdar/sayantanmajumdar.github.io/compare/v0.3.0...v0.3.1
 [0.3.0]: https://github.com/SayantanMajumdar/sayantanmajumdar.github.io/compare/v0.2.1...v0.3.0
