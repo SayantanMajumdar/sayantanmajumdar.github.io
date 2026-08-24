@@ -21,7 +21,8 @@ provided below:
 
     I will be covering *Group - B* of the course which includes 
     `Ordinary Differential Equations` and various other related 
-    topics.
+    topics. The resources including the lectures, problem sets, and schedule can be 
+    found [[here]]({{% ref "ph101/" %}} "PH-101 Lecture Notes")
 
 * **PH-102: Mechanics (Theory + Practical)**
 
