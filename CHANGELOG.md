@@ -7,6 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [0.3.3] - August 24, 2026
+
+### Changed
+
+- Updated the Hugo version in the `test-website.yaml` workflow
+- Updated the Hugo version in the `deploy-website.yaml` workflow
+- Updated the Dart SASS version in the `test-website.yaml` workflow
+- Updated the Dart SASS version in the `deploy-website.yaml` workflow
+- Updated the `test-website,yaml` github workflow
+- Updated the `deploy-website,yaml` github workflow
+- Updated `ATTRIBUTIONS.md` to reflect the new `test-website.yaml` workflow
+- Updated `ATTRIBUTIONS.md` to reflect the new `deploy-website.yaml` workflow
+- Replaced depreciated `languageCode` with `locale`
+- Replaced depreciated `map-get` with `map.get`
+- Replaced depreciated `site.Data` with `hugo.Data`
+- Added more Lecture notes
+
 ## [0.3.2] - August 16, 2026
 
 ### Changed
@@ -61,6 +78,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - A proper `README.md` file.
 
 [unreleased]: https://github.com/SayantanMajumdar/sayantanmajumdar.github.io/compare/v0.3.2...HEAD
+[0.3.3]: https://github.com/SayantanMajumdar/sayantanmajumdar.github.io/compare/v0.3.2...v0.3.3
 [0.3.2]: https://github.com/SayantanMajumdar/sayantanmajumdar.github.io/compare/v0.3.1...v0.3.2
 [0.3.1]: https://github.com/SayantanMajumdar/sayantanmajumdar.github.io/compare/v0.3.0...v0.3.1
 [0.3.0]: https://github.com/SayantanMajumdar/sayantanmajumdar.github.io/compare/v0.2.1...v0.3.0

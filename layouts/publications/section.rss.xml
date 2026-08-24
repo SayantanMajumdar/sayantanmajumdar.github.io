@@ -14,7 +14,7 @@
     <link>{{ .Permalink }}</link>
     <description>All {{ .Title }} on {{ .Site.Title }}</description>
     <generator>Hugo</generator>
-    <language>{{ site.Language.LanguageCode }}</language>
+    <language>{{ site.Language.Locale }}</language>
     {{- with $email }}
     <managingEditor>{{.}}{{ with $name }} ({{ . }}){{ end }}</managingEditor>
     {{- end }}
