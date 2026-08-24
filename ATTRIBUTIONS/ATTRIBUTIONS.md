@@ -59,17 +59,8 @@ The license can also be found at [https://github.com/twbs/icons/blob/main/LICENS
 
 4. GitHub workflows
 
-The Github workflow file [`/.github/workflows/deploy-website.yaml`](/.github/workflows/deploy-website.yaml) 
-contains code that have been obtained from the [Hugo](https://gohugo.io/) 
-website. The code can be found in the link 
-[https://gohugo.io/host-and-deploy/host-on-github-pages/](https://gohugo.io/host-and-deploy/host-on-github-pages/) 
-and also in the corresponding repository for 
-[Hugo](https://gohugo.io/) website in the file 
-[https://github.com/gohugoio/hugoDocs/blob/b6077449c8b62314e5a1a8b0586bdb501ca0d948/content/en/host-and-deploy/host-on-github-pages/index.md](https://github.com/gohugoio/hugoDocs/blob/b6077449c8b62314e5a1a8b0586bdb501ca0d948/content/en/host-and-deploy/host-on-github-pages/index.md). The code 
-in these files have been modified for use in this repository. The code 
-was obtained from the specific version **v0.148.1** of [Hugo](https://gohugo.io/).
-
-The Github workflow file [`/.github/workflows/test-website.yaml`](/.github/workflows/test-website.yaml) 
+The Github workflow files [`/.github/workflows/deploy-website.yaml`](/.github/workflows/deploy-website.yaml) and
+[`/.github/workflows/test-website.yaml`](/.github/workflows/test-website.yaml) 
 contains code that have been obtained from the [Hugo](https://gohugo.io/) 
 website. The code can be found in the link 
 [https://gohugo.io/host-and-deploy/host-on-github-pages/](https://gohugo.io/host-and-deploy/host-on-github-pages/) 
