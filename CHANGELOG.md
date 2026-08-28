@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Changed
+
+- Updated Lecture Notes.
+
 ## [0.3.3] - August 24, 2026
 
 ### Changed
