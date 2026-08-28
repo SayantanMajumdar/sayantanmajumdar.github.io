@@ -28,7 +28,7 @@ disableKinds = ["taxonomy", "term"]
   [params.version]
     major = 0
     minor = 3
-    patch = 3
+    patch = 4
   [params.author]
     name = 'Sayantan Majumdar'
 
