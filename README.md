@@ -6,7 +6,7 @@ using [Hugo](https://gohugo.io/).
 The website can be accessed here 
 [sayantanmajumdar.github.io](https://sayantanmajumdar.github.io/). 
 
-[![Version](https://img.shields.io/badge/version-0.3.4-blue)](https://github.com/SayantanMajumdar/sayantanmajumdar.github.io/releases/tag/v0.3.4)  
+[![Version](https://img.shields.io/badge/version-0.3.5-blue)](https://github.com/SayantanMajumdar/sayantanmajumdar.github.io/releases/tag/v0.3.5)  
 [![Release](https://img.shields.io/github/v/release/SayantanMajumdar/sayantanmajumdar.github.io?color=blue)](https://github.com/SayantanMajumdar/sayantanmajumdar.github.io/releases)  
 [![LICENSE](https://img.shields.io/github/license/SayantanMajumdar/sayantanmajumdar.github.io)](/LICENSE)  
 [![Build Status](https://github.com/SayantanMajumdar/sayantanmajumdar.github.io/actions/workflows/test-website.yaml/badge.svg)](https://github.com/SayantanMajumdar/sayantanmajumdar.github.io/actions/workflows/test-website.yaml)  
