@@ -2,8 +2,8 @@
 title: "Bir Bikram Memorial College, Agartala"
 draft: false
 date: 2026-07-14T23:20:00+0530
-lastmod: 2026-07-14T20:55:00+0530
-publishDate: 2026-07-14T20:00:00+0530
+lastmod: 2026-08-31T23:41:00+0530
+publishDate: 2026-08-31T23:41:00+0530
 summary: |
     I am currently a Guest Lecturer at the **Bir Bikram Memorial College 
     (BBMC)**. I am responsible for teaching various parts of the course 
@@ -35,12 +35,6 @@ provided below:
     syllabus. The resources including the lectures, problem sets, and schedule can be 
     found [[here]]({{% ref "ph201/" %}} "PH-201 Lecture Notes")
 
-* **PH-301: Classical Mechanics & Special theory of Relativity (Theory)**
-
-    I will be covering `Special Theory of Relativity` from the *Group - B* of 
-    the course syllabus.
-
 * **PH-303: Quantum Mechanics - I (Theory)**
 
     I will be covering both *Group - A* and *Group - B* of the course syllabus. 
-    
